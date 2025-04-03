@@ -785,13 +785,13 @@
     .navbar {
         width: 90%;
         gap: 0;
-        margin-bottom: 85rem;
+        margin-bottom: 60rem;
     }
 
     .navbar.sticky {
         width: 100%;
         position: fixed;
-        margin-bottom: 87rem;
+        margin-bottom: 62rem;
         justify-content: center;
         gap: 160px;
         z-index: 1000;
@@ -896,6 +896,7 @@
     .first-advertisement{
         display: flex;
         flex-direction: column;
+        margin-top: 5rem;
     }
 
     .first-advertisement .txt{
@@ -1063,6 +1064,7 @@
         flex-direction: column;
         gap: 100px;
         padding-left: 30px;
+        margin-top: 7rem;
     }
 
     .footer .footer-options{
