@@ -1,0 +1,1080 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* navbar and hero-section start */
+
+.main-navbar{
+    display: flex;
+    justify-content: center;
+}
+
+.main-navbar .text{
+    width: 50%;
+    height: 120vh;
+    background-color: rgb(82, 130, 82);
+}
+
+.main-navbar .txt{
+    margin: 250px 100px;
+    color: white
+}
+
+.main-navbar .txt h1{
+    font-size: 70px;
+    letter-spacing: -4px;
+}
+
+.main-navbar .txt p{
+    margin: 20px 0;
+}
+
+.main-navbar .txt button{
+    padding: 20px 40px;
+    margin-top: 25px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: rgb(40, 108, 40);
+    background-color: floralwhite;
+    border: 1px solid rgb(40, 108, 40);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.main-navbar .txt button:hover{
+    background-color: rgb(40, 108, 40);
+    border: 1px solid white;
+    color: white
+}
+
+.main-navbar .image{
+    width: 50%;
+    height: 120vh;
+    background-color: yellow;
+}
+
+.main-navbar .image img{
+    width: 100%;
+    height: 120vh;
+}
+
+.navbar{
+    position: absolute;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 50px;
+    gap: 300px;
+    margin-top: 30px;
+}
+
+.navbar.sticky{
+    position: fixed;
+    background-color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    border-radius: 0;
+    margin-top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo .fa-bars{
+    display: none;
+}
+
+.navbar .logo .design{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.navbar .logo .design i{
+    font-size: 25px;
+    color: rgb(28, 74, 28);
+    cursor: pointer;
+}
+
+.navbar .logo .design h1{
+    color: rgb(28, 74, 28);
+    cursor: pointer;
+}
+
+.navbar .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar .logo .fa-bars{
+    font-size: 24px;
+}
+
+.navbar ul .fa-xmark{
+    display: none;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.navbar ul li{
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar ul li ul.minilist li{
+    display: block;
+    color: black;
+}
+
+.navbar ul li ul.minilist{
+    background: white;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    padding: 20px 20px;
+    line-height: 30px;
+    right: 490px;
+}
+
+.navbar ul li:hover ul.minilist{
+    display: block;
+}
+
+.navbar ul :nth-child(1){
+    color: rgb(61, 163, 61);
+}
+
+.navbar ul li:hover{
+    color: rgb(61, 163, 61);
+}
+
+.navbar ul .icon{
+    display: none;
+}
+
+.navbar .icon-button{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar .icon-button i{
+    font-size: 20px;
+    color: rgb(28, 74, 28);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar .icon-button i:hover{
+    color: rgb(40, 108, 40);
+}
+
+.navbar .icon-button button{
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(40, 108, 40);
+    border: 1px solid rgb(40, 108, 40);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar .icon-button button:hover{
+    background-color: rgb(28, 74, 28);
+}
+
+/* navbar and hero-section end */
+
+/* product-page start */
+
+.product-page{
+    width: 100%;
+    height: 130vh;
+    background-color: rgb(230, 255, 247);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-page .txt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 900px;
+    padding-top: 80px;
+}
+
+.product-page .txt h1{
+    font-size: 50px;
+    color: rgb(28, 74, 28);
+}
+
+.product-page .txt h1 span{
+    color: rgb(123, 186, 123);
+}
+
+.product-page .txt p a{
+    font-size: 18px;
+    color: rgb(28, 74, 28);
+}
+
+.product-box{
+    display: flex;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 80%;
+    margin: 40px 40px;
+}
+
+.image-container img {
+    width: 400px;
+    display: block;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.image-container #invisible {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -200%);
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    display: none;
+    border-radius: 50px;
+    background: transparent;
+}
+
+.image-container:hover #invisible {
+    display: block;
+}
+
+.image-container:hover img {
+    filter: brightness(50%);
+}
+
+.image-container h1{
+    font-size: 18px;
+    color: rgb(40, 108, 40);
+    margin-top: 20px;
+}
+
+.image-container h2{
+    font-size: 30px;
+    color: rgb(28, 74, 28);
+    margin: 7px 0
+}
+
+.image-container h3{
+    color: rgb(40, 108, 40);
+}
+
+.image-container #visible{
+    color: rgb(40, 108, 40);
+    border: 2px solid rgb(40, 108, 40);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 50px;
+    background: transparent;
+    margin-top: 15px;
+}
+
+.image-container #visible:hover{
+    background-color: rgb(40, 108, 40);
+    color: white;
+}
+
+.product-page .explore a{
+    display: none;
+}
+
+/* product-page end */
+
+/* first-advertisement section start */
+
+.first-advertisement{
+    width: 100%;
+    height: 75vh;
+    background-color: blue;
+    display: flex;
+}
+
+.first-advertisement .txt{
+    width: 50%;
+    height: 75vh;
+    background-color: rgb(82, 130, 82);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-advertisement .txt h1{
+    font-size: 50px;
+    color: rgb(149, 190, 149);
+}
+
+.first-advertisement .txt h1 span{
+    color: white;
+}
+
+.first-advertisement .image{
+    width: 50%;
+    height: 75vh;
+    background-color: aquamarine;
+}
+
+.first-advertisement .image img{
+    width: 100%;
+    height: 75vh;
+}
+
+/* first-advertisement section end */
+
+/* success in the numbers start */
+
+.success{
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(230, 255, 247);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.success h1{
+    font-size: 50px;
+    color: rgb(28, 74, 28);
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+}
+
+.success h1 span{
+    color: rgb(123, 186, 123);
+}
+
+.success .success-no{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.success .success-no .box{
+    width: 20%;
+    height: 25vh;
+    background-color: rgb(82, 130, 82);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.success .success-no .two,.success .success-no .four{
+    background-color: rgb(213, 237, 213);
+    border: 1px solid rgb(61, 103, 61);
+}
+
+.success .success-no .box h2{
+    font-size: 60px;
+}
+
+.success .success-no .box h3{
+    font-size: 18px
+}
+
+.success .success-no .one h2{
+    color: white;
+}
+
+.success .success-no .one h2 span{
+    color: rgb(138, 185, 138);
+}
+
+.success .success-no .one h3{
+    color: white
+}
+
+.success .success-no .two h2{
+    color: rgb(28, 74, 28);
+}
+
+.success .success-no .two h2 span{
+    color: rgb(138, 185, 138);
+}
+
+.success .success-no .two h3{
+    color: rgb(28, 74, 28);
+}
+
+.success .success-no .three h2{
+    color: white;
+}
+
+.success .success-no .three h2 span{
+    color: rgb(138, 185, 138);
+}
+
+.success .success-no .three h3{
+    color: white;
+}
+
+.success .success-no .four h2{
+    color: rgb(28, 74, 28);
+}
+
+.success .success-no .four h2 span{
+    color: rgb(138, 185, 138);
+}
+
+.success .success-no .four h3{
+    color: rgb(28, 74, 28);
+}
+
+/* success in the numbers end */
+
+/* banner section start */
+
+.banner{
+    width: 100%;
+    height: 80vh;
+}
+
+.banner img{
+    width: 100%;
+    height: 80vh;
+}
+
+/* banner section end */
+
+/* second-advertisement section start */
+
+.second-advertisement{
+    width: 100%;
+    height: 75vh;
+    background-color: blue;
+    display: flex;
+}
+
+.second-advertisement .txt{
+    width: 50%;
+    height: 75vh;
+    background-color: rgb(82, 130, 82);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 70px;
+    padding-right: 220px;
+}
+
+.second-advertisement .txt p{
+    font-size: 20px;
+    color: white;
+}
+
+.second-advertisement .txt hr{
+    width: 470px;
+    margin-top: 30px;
+    margin-bottom: 50px
+}
+
+.second-advertisement .txt h1{
+    font-size: 50px;
+    color: rgb(149, 190, 149);
+}
+
+.second-advertisement .txt h1 span{
+    color: white;
+}
+
+.second-advertisement .image{
+    width: 50%;
+    height: 75vh;
+    background-color: aquamarine;
+}
+
+.second-advertisement .image img{
+    width: 100%;
+    height: 75vh;
+}
+
+/* second-advertisement section end */
+
+/* success stories start */
+
+.success-stories{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(235, 252, 246);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.success-stories .child{
+    position: relative;
+    width: 70%;
+    height: 70vh;
+    border: 1px solid black;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+}
+
+.success-stories .child .border-text{
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    width: 180px;
+    text-align: center;
+    transform: translateX(-50%);
+    background: rgb(235, 252, 246);
+    padding: 0 5px;
+    font-weight: bold;
+    color: rgb(123, 186, 123);
+}
+
+.success-stories .child .fa-quote-left{
+    position: absolute;
+    top: 0;
+    left: 1%;
+    width: 50px;
+    text-align: center;
+    transform: translateX(-50%);
+    background: rgb(235, 252, 246);
+    padding: 0 5px;
+    font-weight: bold;
+    color: rgb(123, 186, 123);
+    font-size: 40px;
+}
+
+.success-stories .child .fa-quote-right{
+    position: absolute;
+    top: 65vh;
+    left: 99%;
+    width: 50px;
+    text-align: center;
+    transform: translateX(-50%);
+    background: rgb(235, 252, 246);
+    padding: 0 5px;
+    font-weight: bold;
+    color: rgb(123, 186, 123);
+    font-size: 40px;
+}
+
+.success-stories .child h1{
+    font-size: 40px;
+    color: rgb(123, 186, 123);
+}
+
+.success-stories .child h1 span{
+    color: rgb(61, 103, 61);
+}
+
+/* success stories end */
+
+/* blog section start */
+
+.blog-section{
+    width: 100%;
+    height: 130vh;
+    background-color: rgb(82, 130, 82);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-section .txt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 700px;
+    padding-top: 80px;
+}
+
+.blog-section .txt h1{
+    font-size: 50px;
+    color: white;
+}
+
+.blog-section .txt h1 span{
+    color: rgb(149, 190, 149);
+}
+
+.blog-section .txt button{
+    padding: 12px 30px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+}
+
+.blog-box{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 100px;
+}
+
+.blog-container{
+    width: 400px;
+    height: 600px;
+}
+
+.blog-box .blog-container img{
+    width: 400px;
+    height: 400px;
+}
+
+.blog-box .blog-container h1{
+    font-size: 22px;
+    line-height: 30px;
+    color: white;
+}
+
+.blog-section .mb{
+    padding: 12px 30px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    display: none;
+}
+
+/* blog section end */
+
+/* footer section start */
+
+.footer{
+    width: 100%;
+    height: 60vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    gap: 850px;
+}
+
+.footer .footer-options{
+    display: flex;
+    gap: 150px;
+}
+
+.footer .footer-options .menu ul, .product ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer .footer-options .menu ul li,  .product ul li{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.footer .footer-options .menu ul :nth-child(1), .product ul :nth-child(1){
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.footer .footer-options .menu ul li:hover, .product ul li:hover{
+    color: rgb(123, 186, 123);
+}
+
+.footer .footer-options .menu ul :nth-child(1):hover, .product ul :nth-child(1):hover{
+    color: black;
+    cursor: none;
+}
+
+.footer .footer-icon h1{
+    font-size: 25px;
+}
+
+.footer .footer-icon .icon{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer .footer-icon .icon i{
+    font-size: 18px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+/* footer section end */
+
+@media (max-width: 768px) {
+
+    /* navbar and hero-section start */
+
+    .navbar .logo .fa-bars{
+        display: block;
+    }
+
+    .main-navbar{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-navbar .text{
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(40, 108, 40);
+    }
+
+    .main-navbar .txt{
+        margin: 200px 0;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-navbar .txt h1{
+        font-size: 50px;
+        letter-spacing: -2px;
+    }
+
+    .main-navbar .txt p{
+        font-size: 20px;
+    }
+
+    .main-navbar .image{
+        width: 100%;
+        height: 71vh;
+        background-color: yellow;
+    }
+    
+    .main-navbar .image img{
+        width: 100%;
+        height: 71vh;
+    }
+
+    .navbar {
+        width: 90%;
+        gap: 0;
+        margin-bottom: 85rem;
+    }
+
+    .navbar.sticky {
+        width: 100%;
+        position: fixed;
+        margin-bottom: 87rem;
+        justify-content: center;
+        gap: 160px;
+        z-index: 1000;
+    }
+
+    .navbar ul {
+        position: fixed;
+        flex-direction: column;
+        background-color: aliceblue;
+        width: 90vw;
+        height: 100vh;
+        top: 0;
+        left: -350px;
+        padding: 20px;
+        font-size: 24px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .navbar ul.active{
+        left: 0;
+    }
+
+    .navbar ul .fa-xmark{
+        display: block;
+    }
+
+    .main-navbar .navbar .icon-button button{
+        display: none;
+    }
+
+    .main-navbar .navbar .icon-button i{
+        font-size: 24px;
+    }
+
+    .navbar ul .icon{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .navbar ul .icon .first, .second, .third{
+        display: flex;
+        gap: 5px;
+    }
+
+    .navbar ul .icon i{
+        font-size: 16px;
+        color: rgb(40, 108, 40);
+    }
+
+    .navbar ul .icon p{
+        font-size: 16px;
+        color: rgb(28, 74, 28);
+    }
+
+    /* navbar and hero-section end */
+
+    /* product-page start */
+
+    .product-page{
+        height: 230vh;
+        z-index: 0;
+    }
+
+    .product-page .txt h1{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .product-page .txt p{
+        display: none;
+    }
+
+    .product-box{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .product-box .image-container{
+        margin: 20px 0;
+        text-align: center;
+        width: 350px;
+    }
+
+    .product-box .image-container img{
+        width: 350px;
+    }
+
+    .product-page .explore a{
+        font-size: 18px;
+        color: rgb(28, 74, 28);
+        margin-top: 20px;
+        display: block;
+    }
+
+    /* product-page end */
+
+    /* first-advertisement section start */
+
+    .first-advertisement{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first-advertisement .txt{
+        width: 100%;
+        text-align: center;
+    }
+
+    .first-advertisement .txt h1{
+        font-size: 30px;
+        margin: 100px 0;
+    }
+
+    .first-advertisement .image{
+        width: 100%;
+    }
+
+    .first-advertisement .image img{
+        width: 100%;
+        height: 400px;
+    }
+
+    /* first-advertisement section end */
+
+    /* success in the numbers start */
+
+    .success{
+        height: 160vh;
+    }
+
+    .success h1{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-left: 0;
+        margin-top: 100px
+    }
+
+    .success .success-no {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .success .success-no .box{
+        width: 90%;
+        margin:  20px 20px;
+    }
+
+    /* success in the numbers end */
+
+    /* banner section start */
+
+    .banner{
+        width: 100%;
+        height: 40vh;
+    }
+
+    .banner img{
+        width: 100%;
+        height: 40vh;
+        object-fit: cover;
+    }
+
+    /* banner section end */
+
+    /* second-advertisement section start */
+
+    .second-advertisement{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .second-advertisement .txt{
+        width: 100%;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .second-advertisement .txt h1{
+        font-size: 30px;
+        /* margin: 100px 0; */
+    }
+    .second-advertisement .txt hr{
+        width: 350px;
+        margin-top: 30px;
+        margin-bottom: 50px
+    }
+
+    .second-advertisement .image{
+        width: 100%;
+        background-color: white;
+    }
+
+    .second-advertisement .image img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    /* second-advertisement section end */
+
+    /* success stories start */
+
+    .success-stories{
+        height: 90vh;
+        margin-top: 150px;
+    }
+
+    .success-stories .child{
+        width: 85%;
+        padding: 0 10px;
+    }
+
+    .success-stories .child h1{
+        font-size: 25px;
+    }
+
+    /* success stories end */
+
+    /* blog section start */
+
+    .blog-section{
+        height: 230vh;
+        z-index: 0;
+    }
+
+    .blog-section .txt h1{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .blog-section .txt button{
+        display: none;
+    }
+
+    .blog-box{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+    }
+
+    .blog-box .blog-container{
+        margin: 20px 0;
+        text-align: center;
+        width: 350px;
+        height: 500px;
+    }
+
+    .blog-box .blog-container img{
+        width: 350px;
+    }
+
+    .blog-section .mb{
+        display: block;
+    }
+
+    /* blog section end */
+
+    /* footer section start */
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        padding-left: 30px;
+    }
+
+    .footer .footer-options{
+        display: flex;
+        gap: 100px;
+    }
+
+    .footer .footer-icon .icon{
+        display: flex;
+        justify-content: left;
+        gap: 30px;
+    }
+
+    /* footer section end */
+}
