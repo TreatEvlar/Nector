@@ -785,13 +785,13 @@
     .navbar {
         width: 90%;
         gap: 0;
-        margin-bottom: 60rem;
+        margin-bottom: 70rem;
     }
 
     .navbar.sticky {
         width: 100%;
         position: fixed;
-        margin-bottom: 62rem;
+        margin-bottom: 72rem;
         justify-content: center;
         gap: 160px;
         z-index: 1000;
@@ -852,7 +852,7 @@
     /* product-page start */
 
     .product-page{
-        height: 230vh;
+        height: 245vh;
         z-index: 0;
     }
 
@@ -896,7 +896,7 @@
     .first-advertisement{
         display: flex;
         flex-direction: column;
-        margin-top: 5rem;
+        margin-top: 7rem;
     }
 
     .first-advertisement .txt{
@@ -1064,7 +1064,7 @@
         flex-direction: column;
         gap: 100px;
         padding-left: 30px;
-        margin-top: 7rem;
+        margin-top: 15rem;
     }
 
     .footer .footer-options{
